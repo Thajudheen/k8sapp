@@ -1,0 +1,44 @@
+---
+- name: Install Git on CentOS VM
+  hosts: test1
+  become: yes
+  
+  vars:
+    git_version: "2.33.1"
+
+  tasks:
+    - name: Update package cache
+      yum:
+        name: '*'
+        state: latest
+      become: yes
+
+    - name: Create gitconfig file using Jinja template
+      template:
+        src: gitconfig.j2
+        dest: /home/vagrant/.gitconfig
+      become: yes
+      vars:
+        git_username: "Joe"
+        git_email: "joe@gmail.com"
+        git_version: "2.33.1"
+
+    - name: Install Git package
+      yum:
+        name: git
+        state: present
+      become: yes
+
+        # - name: Set Git global configuration
+      #command: git config --global user.name {{ git_username }} && git config --global user.email {{ git_email }}
+      #ecome: yes
+
+    - name: Verify Git installation
+      command: git --version
+      register: git_version_output
+      changed_when: false
+
+    - name: Display Git version
+      debug:
+        var: git_version_output.stdout_lines
+
