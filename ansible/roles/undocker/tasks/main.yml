@@ -1,0 +1,13 @@
+---
+#- name: Uninstall Docker from CentOS
+#  tasks:
+    - name: Stop Docker service
+      systemd:
+        name: docker
+        state: stopped
+      ignore_errors: true
+      
+    - name: Remove Docker package
+      yum:
+        name: docker-ce
+        state: absent
