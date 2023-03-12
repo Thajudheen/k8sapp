@@ -1,14 +1,14 @@
 # k8sapp
 
-** terraform-sample ** \
-This script will create a VPC,FW and instance in GCP. \
+** `terraform-sample `** \
+This script will create a VPC,FW and instance in GCP. 
 
-We do the following steps, \
+We do the following steps, 
 
-** Create a configuration for an auto mode network ** \
+** `Create a configuration for an auto mode network` ** \
 ** Create a configuration for a firewall rule ** \
 ** Create a module for VM instances ** \
-** Create and deploy a configuration ** \
+** Create and deploy a configuration ** 
 
 ** Terraform commands: **
 
