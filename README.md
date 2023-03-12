@@ -12,8 +12,8 @@ We do the following steps,
 
 **Terraform commands:**
 
-To intialize> : $ terraform init \
-To plan     > : $ terraform plan \
-To apply    > : $ terraform apply 
+To intialize &nbsp; : $ terraform init \
+To plan      &nbsp; : $ terraform plan \
+To apply     &nbsp; : $ terraform apply 
 
 Once the script is successfully deployed, the resources will be created in GCP that can be seen in GCP console
