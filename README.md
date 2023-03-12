@@ -16,4 +16,8 @@ To intialize &nbsp; : $ terraform init \
 To plan     &nbsp;&nbsp;   : $ terraform plan \
 To apply    &nbsp;&nbsp;   : $ terraform apply 
 
+To intialize  : $ terraform init \
+To plan       : $ terraform plan \
+To apply      : $ terraform apply 
+
 Once the script is successfully deployed, the resources will be created in GCP that can be seen in GCP console
