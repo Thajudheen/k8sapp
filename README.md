@@ -12,10 +12,6 @@ We do the following steps,
 
 **Terraform commands:**
 
-To intialize &nbsp; : $ terraform init \
-To plan     &nbsp;&nbsp;   : $ terraform plan \
-To apply    &nbsp;&nbsp;   : $ terraform apply 
-
 To intialize  : $ terraform init \
 To plan   &emsp;  : $ terraform plan \
 To apply  &emsp;: $ terraform apply 
